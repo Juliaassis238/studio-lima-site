@@ -88,7 +88,8 @@
     box-shadow:0 2px 16px rgba(0,0,0,.22);
   }
   header.hide-nav{transform:translateY(-110%);}
-  .logo-mark{display:flex;align-items:center;gap:.6rem;}
+  .logo-mark{display:flex;align-items:center;gap:.6rem;line-height:0;}
+  .brand-logo{display:block;width:132px;height:auto;max-height:62px;object-fit:contain;object-position:left center;}
   .logo-text{font-family:var(--serif);color:var(--dourado-claro);line-height:1.1;}
   .logo-text .l1{font-size:1.05rem;letter-spacing:.12em;display:block;font-weight:600;}
   .logo-text .l2{font-size:.48rem;letter-spacing:.22em;color:#a89674;text-transform:uppercase;font-family:var(--sans);font-weight:400;}
@@ -369,6 +370,7 @@
     .container{padding:0 6.5%;}
     header{padding:.8rem 6.5%;}
     header.scrolled{padding:.7rem 6.5%;}
+    .brand-logo{width:108px;max-height:52px;}
     .logo-text .l1{font-size:.9rem;}
     .logo-text .l2{font-size:.4rem;}
     .hero h1{font-size:clamp(1.9rem,7vw,2.6rem);}
@@ -392,11 +394,8 @@
 <body>
 
 <header id="header">
-  <a href="#topo" class="logo-mark">
-    <span class="logo-text">
-      <span class="l1">STUDIO LIMA</span>
-      <span class="l2">Bárbara Lima · Asa Sul, Brasília</span>
-    </span>
+  <a href="#topo" class="logo-mark" aria-label="Studio Lima — início">
+    <img class="brand-logo" src="studio_lima_logo_original_transparente.png" alt="Studio Lima — Depilação, Estética e Beleza">
   </a>
   <nav class="links" id="navLinks">
     <a href="#sobre" data-nav>Sobre</a>
@@ -644,7 +643,7 @@
     <div class="foot-grid">
       <div>
         <div class="foot-logo">
-          <span class="logo-text"><span class="l1">STUDIO LIMA</span></span>
+          <img class="brand-logo" src="studio_lima_logo_original_transparente.png" alt="Studio Lima — Depilação, Estética e Beleza">
         </div>
         <p class="small">Depilação pelo método espanhol, na Asa Sul, Brasília/DF. Conteúdo reunido a partir de fontes públicas do perfil.</p>
       </div>
