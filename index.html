@@ -348,8 +348,9 @@
     .burger{display:flex;}
   }
   @media(max-width:760px){
-    .nav-cta .btn span.txt{display:none;}
-    .nav-cta .btn{padding:.75rem .95rem;}
+    .nav-cta{gap:.45rem;}
+    .nav-cta .btn span.txt{display:inline;}
+    .nav-cta .btn{min-width:78px;padding:.62rem .68rem;font-size:.58rem;letter-spacing:.10em;border-radius:999px;}
     header{padding:.9rem 4.5%;}
     .cta-final{padding:6rem 0;}
     .contato{padding:6rem 0 5rem;}
@@ -365,7 +366,7 @@
     .container{padding:0 6.5%;}
     header{padding:.8rem 6.5%;}
     header.scrolled{padding:.7rem 6.5%;}
-    .brand-logo{width:108px;height:50px;}
+    .brand-logo{width:96px;height:46px;}
     .logo-text .l1{font-size:.9rem;}
     .logo-text .l2{font-size:.4rem;}
     .hero h1{font-size:clamp(1.9rem,7vw,2.6rem);}
@@ -400,7 +401,7 @@
     <a href="#contato" data-nav>Contato</a>
   </nav>
   <div class="nav-cta">
-    <a href="https://wa.me/5561991333916" target="_blank" rel="noopener" class="btn"><span class="txt">Agendar</span></a>
+    <a href="https://wa.me/5561991333916" target="_blank" rel="noopener" class="btn" aria-label="Falar com o Studio Lima pelo WhatsApp"><span class="txt">WhatsApp</span></a>
     <div class="burger" id="burger" aria-label="Abrir menu"><span></span><span></span><span></span></div>
   </div>
 </header>
